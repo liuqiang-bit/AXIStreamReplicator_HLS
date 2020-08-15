@@ -1,7 +1,9 @@
 # AXIStreamReplicator_HLS
-此模块使用HLS编写，用于复制流对象
 
-## 一、使用**\source\create_project.tcl**复现工程
+> 此模块使用HLS编写，用于复制流对象，有v1和v2两个版本，v1版本方便联合仿真，v2版本联合仿真时间久，但资源占用只有v1的一半，两个均已上板测试。
+>
+
+## 一、使用**\source\copyStream_v1\create_project.tcl**和**\source\copyStream_v2\create_project.tcl**复现工程
 
 ### 1、打开 Vivado HLS Command Prompt工具
 
