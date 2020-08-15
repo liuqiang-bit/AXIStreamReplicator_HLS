@@ -10,14 +10,14 @@ void copyStream(AXI_STREAM_24& video_in, AXI_STREAM_24& video_out1, AXI_STREAM_2
 #pragma HLS INTERFACE axis port=video_out2
 #pragma HLS INTERFACE axis port=video_out1
 #pragma HLS INTERFACE axis port=video_in
-	static Pixel pix;
+	Pixel pix;
 
-	streamCopy_label1:for(int i = 0; i < ROW; i++)
+	streamCopy_label1:for(int i = 0; i < ROWi++)
 	{
-#pragma HLS LOOP_TRIPCOUNT min=1 max=600
-		streamCopy_label0:streamCopy_label2:for(int j = 0; j < COL; j++)
+#pragma HLS LOOP_TRIPCOUNT min=1 max=1080
+		streamCopy_label0:streamCopy_label2:for(int j = 0; j < COLj++)
 		{
-#pragma HLS LOOP_TRIPCOUNT min=1 max=800
+#pragma HLS LOOP_TRIPCOUNT min=1 max=1920
 #pragma HLS PIPELINE
 			video_in   >> pix;
 			video_out1 << pix;
