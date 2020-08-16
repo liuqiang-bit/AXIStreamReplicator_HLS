@@ -28,3 +28,7 @@
 ### 6. v2版性能参数。
 
 <img src="F:\MyGit\AXIStreamReplicator_HLS\images\5.png" style="zoom:50%;" />
+
+### 7.上板实测。
+
+![](F:\MyGit\AXIStreamReplicator_HLS\images\6.png)
